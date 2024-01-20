@@ -1,0 +1,30 @@
+.todo-item{
+    margin: 5px;
+    padding: 1px;
+   color: rgb(233, 227, 238);
+ 
+}
+.todo-item-wrapper{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.checkbox-label{
+    display: flex;
+    align-items: center;
+   
+}
+
+.styled-checkbox{
+    margin-right: 5px;
+    appearance: none; /*important to show an empty checkbox */
+    width: 15px;
+    height: 15px;
+    border: 2px solid #eceaee; /* Border color for the checkbox */
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    margin-bottom: -2px;
+    
+}

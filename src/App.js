@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+/** @format */
 
+import React from "react";
+import "./App.css";
+import TodoList from "./components/TodoList/TodoList";
+import Form from "./components/Form/Form";
+
+const dummyData = [
+  { id: 1, content: "HTML" },
+  { id: 2, content: "CSS" },
+  { id: 3, content: "JS" },
+  { id: 4, content: "REACT" },
+];
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="listContiner">
+        <Form />
+      </div>
+
+      <div className="listContiner">
+        <TodoList data={dummyData} />
+      </div>
     </div>
   );
 }
