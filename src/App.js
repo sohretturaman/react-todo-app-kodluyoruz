@@ -1,25 +1,31 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import TodoList from "./components/TodoList/TodoList";
 import Form from "./components/Form/Form";
 
-const dummyData = [
-  { id: 1, content: "HTML" },
-  { id: 2, content: "CSS" },
-  { id: 3, content: "JS" },
-  { id: 4, content: "REACT" },
-];
+const initialVal = [{ id: "", content: "first task" }];
 function App() {
+  const [data, setData] = useState(initialVal);
+
+  const HandleAddItem = (newItem) => {
+    console.log(newItem);
+    setData((current) => [
+      ...current,
+      { id: Math.random(2), content: newItem },
+    ]);
+  };
+
+  console.log("my data", data);
   return (
     <div className="App">
       <div className="listContiner">
-        <Form />
+        <Form AddItem={HandleAddItem} />
       </div>
 
       <div className="listContiner">
-        <TodoList data={dummyData} />
+        <TodoList data={data} />
       </div>
     </div>
   );
