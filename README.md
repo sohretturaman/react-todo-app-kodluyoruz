@@ -1,7 +1,11 @@
 # Getting Started with Create React App
 
 
-https://github.com/sohretturaman/react-todo-app-kodluyoruz/assets/81382575/36c33696-6efc-4ea2-96fd-13376900961a
+https://github.com/sohretturaman/react-todo-app-kodluyoruz/assets/81382575/8f987663-7d68-4ef1-83e2-ea1db3dbb096
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
